@@ -1,5 +1,5 @@
 #!/bin/zsh
 
-mkdir "$HOME/config/systemd/user" &&
+mkdir "$HOME/config/systemd/user" -p &&
 cp "pulseaudio.service" "$HOME/.config/systemd/user" &&
 systemctl --user enable --now pulseaudio
