@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-pacman -S --noconfirm pulseaudio &&
+sudo pacman -S --noconfirm pulseaudio &&
 mkdir "$HOME/config/systemd/user" -p &&
 cp "pulseaudio.service" "$HOME/.config/systemd/user" &&
 systemctl --user enable --now pulseaudio
